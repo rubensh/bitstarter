@@ -45,6 +45,7 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		background-image: url('http://www.pptbackgrounds.net/uploads/clouds-rain-ppt-background-backgrounds-wallpapers.jpg');
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -68,14 +69,14 @@
         padding: 2% 0%;
       }
       .actions {
-        background-color: #343434;
+        /*background-color: #343434;*/
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
       .statistics h3, .statistics p {
-        color: white;
+        color: black;
       }
 
       /* Marketing Copy and Footer */
@@ -97,6 +98,7 @@
       .footer a {
         color: #ccccff;
       }
+	  
     </style>
   </head>
   <body>
@@ -133,7 +135,7 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>WhoIsIt.com</h1>
+          <h1>WhoIsIt.com: Development Version</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
@@ -144,8 +146,8 @@
         </div>
       </div>
       <div class="row-fluid pitch">
-
-      <!-- Beyond this part the marketing copy begins. -->
+	  
+	  <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
@@ -155,12 +157,12 @@
         </div>
         <div class="span5 copy">
           <p>
-	        Almost everybody leaves a small portion of his life on the Net. That information can be used for different purposes, such as:
+            Almost everybody leaves a small portion of his life on the Net. That information can be used for different purposes, such as:
 		    <ul>
-		            <li>Identify a person (know his name, his age, and other personal information).</li>
-			          <li>Obtain media content for a person.
-				          <li>Knowing people habits, ideals, affiliations, etcetera.</li>
-					      </ul>
+				<li>Identify a person (know his name, his age, and other personal information).</li>
+				<li>Obtain media content for a person.
+				<li>Knowing people habits, ideals, affiliations, etcetera.</li>
+			</ul>
           </p>
         </div>
       </div>
@@ -170,26 +172,26 @@
           <p>
             WhoIsIt.com can be used in the following cases:
 	        <ul>
-		        <li>If you want to find information about a person, but you only know his name, or some basic information.</li>
-			      <li>You are concerned about your digital profile.</li>
-			            <li>Identify people from a photography.</li>
-				          <li>Find people from your past: old friends, neighbours, etcetera.</li>
-					      </ul>
+				<li>If you want to find information about a person, but you only know his name, or some basic information.</li>
+				<li>You are concerned about your digital profile.</li>
+				<li>Identify people from a photography.</li>
+				<li>Find people from your past: old friends, neighbours, etcetera.</li>
+			</ul>
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://3.bp.blogspot.com/-5_g9-gJaI4M/UFWNhr_4qVI/AAAAAAAAAkk/uI9gh_XeG2M/s1600/Missed_her_love_hug1.jpg">
+          <img class="img-polaroid" src="http://3.bp.blogspot.com/-5_g9-gJaI4M/UFWNhr_4qVI/AAAAAAAAAkk/uI9gh_XeG2M/s1600/Missed_her_love_hug1.jpg" alt="">
         </div>
       </div>
-
-      <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span8 offset2 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
+				different in horizontal and vertical layouts, illustrating
+				media queries. -->
                 <div class="linediv-l">
                 <h3>0</h3> <p>backers</p>
                 </div>
@@ -206,7 +208,9 @@
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
+		  
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
@@ -214,20 +218,27 @@
               <div class="bar bar-warning" style="width: 100%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
+		  
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
+		  
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
         </div>
       </div>
-
+	  
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
@@ -239,48 +250,44 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    How does it works?
+					How does it works?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-		        <div>
-                      Once you tell our search engine to search for a people, it retrieves information from public sites, as search engines, galleries, blogs, personal webpages, and all kind of sites that manages personal information.
-		          </div>
-			    <div>&nbsp;</div>
-			        <div>
-				        When the search is done, WhoIsIt.com will show you a report with the results.
-					    </div>
+					<div>
+						Once you tell our search engine to search for a people, it retrieves information from public sites, as search engines, galleries, blogs, personal webpages, and all kind of sites that manages personal information.
+					</div>
+					<div>&nbsp;</div>
+					<div>
+						When the search is done, WhoIsIt.com will show you a report with the results.
+					</div>
                   </div>
                 </div>
               </div>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    Is everybody on the Net?
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+					Is everybody on the Net?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    No, for sure. But if someone's information is on the Net, WhoIsIt.com will find it!
+					No, for sure. But if someone's information is on the Net, WhoIsIt.com will find it!
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
       </div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+          <p>
+			This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page.
+		  </p>
         </div>
       </div>
     </div>
